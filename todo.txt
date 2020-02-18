@@ -1,0 +1,5 @@
+Image counter
+animations
+open folder on resize
+settings
+grey photos

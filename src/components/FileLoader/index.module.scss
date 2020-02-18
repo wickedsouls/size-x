@@ -1,0 +1,31 @@
+@import "../../style/index";
+
+.file_loader{
+    width: 70%;
+    position: absolute;
+    left: 15%;
+    top: 50px;
+    height: 300px;
+    border-radius: 4px;
+    background: $grey-light;
+    outline: none;
+    border: 2px solid transparent;
+    &.active{
+        border: 2px solid $p-dark;
+    }
+    .logo{
+        width: 150px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .desc{
+        position: absolute;
+        left: 0;
+        bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}

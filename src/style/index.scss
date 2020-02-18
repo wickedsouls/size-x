@@ -1,0 +1,18 @@
+@import "reset";
+@import "fonts";
+
+$primary:#f44335;
+$p-light:#ff7960;
+$p-dark:#b9000b;
+
+$secondary:#4f342e;
+$s-light:#7c5e57;
+$s-dark:#260e04;
+
+$grey:#E1E2E1;
+$grey-light:#F5F5F6;
+
+body{
+    font-family: 'OdibeeSans', sans-serif;
+    background: $grey;
+}

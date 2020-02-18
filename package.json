@@ -1,0 +1,76 @@
+{
+  "name": "size-x",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Image resizing made eazy",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "@types/jest": "^24.0.0",
+    "@types/node": "^12.0.0",
+    "@types/react": "^16.9.0",
+    "@types/react-dom": "^16.9.0",
+    "@types/react-redux": "^7.1.7",
+    "electron-is-dev": "^1.1.0",
+    "node-sass": "^4.13.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-dropzone": "^10.2.1",
+    "react-redux": "^7.1.3",
+    "react-scripts": "3.4.0",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "sharp": "^0.24.0",
+    "typescript": "~3.7.2"
+  },
+  "main": "public/electron.js",
+  "scripts": {
+    "start": "BROWSER=none rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "react-scripts eject",
+    "electron": "electron .",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "productName": "SizeX",
+    "copyright": "Copyright © 2019 Karolis Kerpys",
+    "mac": {
+      "hardenedRuntime": true,
+      "gatekeeperAssess": false,
+      "entitlements": "./build/entitlements.mac.inherit.plist",
+      "entitlementsInherit": "./build/entitlements.mac.inherit.plist",
+      "target": "dmg"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "./public"
+    }
+  },
+  "homepage": "./",
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@rescripts/cli": "0.0.13",
+    "electron": "^7.0.0",
+    "electron-builder": "^22.3.2",
+    "electron-rebuild": "^1.10.0"
+  }
+}

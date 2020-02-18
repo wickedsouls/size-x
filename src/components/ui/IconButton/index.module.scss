@@ -1,0 +1,97 @@
+@import "../../../style/index";
+
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    &.sm{
+        width: 14px;
+        height: 14px;
+    }
+    &.md{
+        width: 18px;
+        height: 18px;
+    }
+    &.lg{
+        width: 24px;
+        height: 24px;
+    }
+    &:hover .info {
+        display: block;
+    }
+    .info {
+        position: absolute;
+        font-size: 12px;
+        left: 50%;
+        font-weight: 300;
+        transform: translateX(-50%);
+        background: $grey3;
+        color: #fff;
+        white-space: nowrap;
+        padding: 4px 6px;
+        border-radius: 4px;
+        text-align: center;
+        display: none;
+        user-select: none;
+    }
+    &.sm .info{
+        top: 26px;
+    }
+    &.md .info{
+        top: 30px;
+    }
+    &.lg .info{
+        top: 36px;
+    }
+    .icon {
+        cursor: pointer;
+    }
+    &:after {
+        content: '';
+        cursor: pointer;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        transition: .15s;
+        background: rgba(0,0,0,.1);
+    }
+    &.light:after{
+        background: rgba(255,255,255,.1);
+    }
+    &.sm:after{
+        left: 7px;
+        top: 7px;
+    }
+    &.sm:hover:after{
+        width: 30px;
+        height: 30px;
+        left: -8px;
+        top: -8px;
+    }
+    &.md:after{
+        left: 9px;
+        top: 9px;
+    }
+    &.md:hover:after{
+        width: 34px;
+        height: 34px;
+        left: -8px;
+        top: -8px;
+    }
+    &.lg:after{
+        left: 12px;
+        top: 12px;
+    }
+    &.lg:hover:after{
+        width: 38px;
+        height: 38px;
+        left: -7px;
+        top: -7px;
+    }
+}

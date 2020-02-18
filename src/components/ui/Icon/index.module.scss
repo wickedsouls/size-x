@@ -1,0 +1,35 @@
+@import "../../../style/index";
+.sm {
+    width: 14px;
+    height: 14px;
+}
+
+.md {
+    width: 18px;
+    height: 18px;
+}
+
+.lg {
+    width: 24px;
+    height: 24px;
+}
+.primary{
+    fill: $primary;
+    stroke:$primary;
+}
+.secondary{
+    fill: $secondary;
+    stroke:$secondary;
+}
+.dark{
+    fill: black;
+    stroke:black;
+}
+.light{
+    fill: white;
+    stroke:white;
+}
+.grey{
+    fill: $grey;
+    stroke:$grey;
+}
